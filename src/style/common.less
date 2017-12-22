@@ -1,0 +1,80 @@
+@import './mixins';
+
+body {
+  font-size: 16px;
+  color: #333;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+input {
+  border: none;
+  outline: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #B3B3B3;
+}
+::-moz-placeholder {
+  color: #666;
+}
+:-ms-input-placeholder {
+  color: #B3B3B3;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.v-middle {
+  vertical-align: middle;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.v-main {
+  width: @width;
+  margin: auto;
+}
+.blue {
+  color: @blue;
+}
+// 覆盖样式 element-ui 兼容IE9
+.el-table tr {
+  background-color: transparent\9;
+}
+.el-pager,
+.el-pager li,
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+  float: left\9;
+}
+a {
+  outline: none\9;
+}
