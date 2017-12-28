@@ -1,0 +1,21 @@
+
+/* 覆盖样式 element-ui 兼容IE9 表格边框不显示、分页组件错位 */
+.el-table tr {
+  background-color: transparent\9;
+}
+.el-pager,
+.el-pager li,
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+  float: left\9;
+}
+a {
+  outline: none\9;
+}
+
+/* IOS UIWebView 点击时禁止背景变灰闪烁 */
+* {
+  outline: 0px solid transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
