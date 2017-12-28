@@ -1,6 +1,6 @@
 # my-vue-template
 
-> A Vue.js project
+> my-vue-template
 
 ## Build Setup
 
