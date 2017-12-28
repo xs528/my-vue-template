@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+/* eslint-disable */
 Date.prototype.myFormat = function(fmt) { // author: meizz
   const o = {
     'M+': this.getMonth() + 1, // 月份
